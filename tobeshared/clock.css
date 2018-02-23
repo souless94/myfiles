@@ -1,0 +1,32 @@
+{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    font-size:36px;
+}
+
+.clock{
+    text-align:left;
+    width:auto;
+    height:auto;
+
+}
+.clock p{
+    color: darkred;
+    font-family: sans-serif;
+}
+.clock [id=clock2]{
+	font-size:50px;
+	color:silver;
+	border:2px dashed #2E9AFE;
+	width:50px;
+	margin-left:0px;
+    
+}
+.clock [id=date1]{
+    font-size:50px;
+    color:silver;
+    border:2px dashed #2E9AFE;
+    width:50px;
+}
+

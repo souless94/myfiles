@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+    <script type="text/javascript" src="speedup.js"></script>
+<link rel="stylesheet" type="text/css" href="u1.css">
+    <title>Clock</title>
+    <script type="text/javascript" src="clock.js"></script>
+    <link type="text/css" rel="stylesheet" href="clock.css">
+</head>
+    <body>
+        <div class="clock">
+            <p>time in gmt -0500</p>
+            <span id="date1"></span>
+            <br>
+            <span id="clock2"></span>
+        </div>
+        <div class= "block">
+        <div class ="left">
+            <p>speed up calculator</p>
+        <form method="post" id="calc_form" onsubmit="return calc();" autocomplete="off">
+            <div class= "norm">
+                <p>normal speed ups</p>
+                <hr>
+                <label>5 min :</label><input type ="text" id ="m5" required pattern="\d*" title="enter positive numbers only" value=0 onblur="calc_p()"><label></label>
+                <br>
+                <label>10 min :</label><input type ="text" id="m10" required pattern="\d*" title="enter positive numbers only" value=0 onblur="calc_p()" >
+                <br>
+                <label>15 min :</label><input type ="text" id="m15" required pattern="\d*" title="enter positive numbers only"  value=0 onblur="calc_p()"><label></label>
+                <br>
+                <label>30 min :</label><input type ="text" id="m30" required pattern="\d*" title="enter positive numbers only"  value=0 onblur="calc_p()"><label></label>
+                <br>
+                <label>60 min :</label><input type ="text" id="h1" required pattern="\d*" title="enter positive numbers only"  value=0 onblur="calc_p()"><label></label>
+                <br>
+                <label>3 hr :</label><input type ="text" id="h3" required pattern="\d*" title="enter positive numbers only"  value=0 onblur="calc_p()"><label></label>
+                <br>
+                <label>8 hr :</label><input type ="text" id="h8" required pattern="\d*" title="enter positive numbers only"  value=0 onblur="calc_p()"><label></label>
+                <br>
+                <label>15 hr :</label><input type ="text" id="h15" required pattern="\d*" title="enter positive numbers only"  value=0 onblur="calc_p()"><label></label>
+            </div>
+            <div class ="plus">
+            <br>
+            <label> + </label>
+            <br>
+            <label> + </label>
+            <br>
+            <label> + </label>
+            <br>
+            <label> + </label>
+            <br>
+            <label> + </label>
+            <br>
+            <label> + </label>
+            <br>
+            <label> + </label>
+            <br>
+            <label> + </label>
+            </div>
+            <div class="re"> 
+                <p>research speed ups</p>
+                <hr>
+                <label>5 min research:</label><input type ="text" id ="m5r"  required pattern="\d*" title="enter positive numbers only" value=0 onblur="calc_p()"><label></label>
+                <br>
+                <label>10 min research:</label><input type ="text" id="m10r" required pattern="\d*" title="enter positive numbers only" value=0 onblur="calc_p()"><label></label>
+                <br>
+                <label>15 min research:</label><input type ="text" id="m15r" required pattern="\d*" title="enter positive numbers only" value=0 onblur="calc_p()"><label></label>
+                <br>
+                <label>30 min research:</label><input type ="text" id="m30r" required pattern="\d*" title="enter positive numbers only" value=0 onblur="calc_p()"><label></label>
+                <br>
+                <label>60 min research:</label><input type ="text" id="h1r" required pattern="\d*" title="enter positive numbers only" value=0 onblur="calc_p()"><label></label>
+                <br>
+                <label>3 hr research:</label><input type ="text" id="h3r" required pattern="\d*" title="enter positive numbers only" value=0 onblur="calc_p()"><label></label>
+                <br>
+                <label>8 hr research:</label><input type ="text" id="h8r" required pattern="\d*" title="enter positive numbers only" value=0 onblur="calc_p()"><label></label>
+                <br>
+                <label>15 hr research:</label><input type ="text" id="h15r" required pattern="\d*" title="enter positive numbers only" value=0 onblur="calc_p()"><label></label>
+            </div>
+            <div class="ans">
+            <hr>
+            <input type="submit" id="calculate" value="calculate">
+            <input type="reset" value="reset">
+            <br>
+            <span>normal speed ups: </span><input type="text" id="normal" value=" total normal speed up is : 0 days 0 hours 0 minutes">
+            <hr>
+            <span>research speed ups: </span><input type="text" id="research" value=" total research speed up is : 0 days 0 hours 0 minutes">
+            <hr>
+            <span>total speed ups: </span><input type="text" id="total" value=" total speed ups is : 0 days 0 hours 0 minutes">
+            <hr>
+            </div>
+        </form>
+            </div>
+
+        </div>
+    </body>     
+</html>
