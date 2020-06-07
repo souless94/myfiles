@@ -1,3 +1,6 @@
 https://docs.google.com/presentation
 
 aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vcHJlc2VudGF0aW9uL2QvMVhqNVJBNWZKZ0MtdWdLRElOdDdCMUpIZjkxZ2VkLUROcW5MQjRDY2VkTEUvZWRpdD91c3A9c2hhcmluZw==
+
+fcrackzip -u -b -D -p dictionary.txt zipfile
+https://null-byte.wonderhowto.com/how-to/hack-like-pro-crack-passwords-part-4-creating-custom-wordlist-with-crunch-0156817/
